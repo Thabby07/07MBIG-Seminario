@@ -5,36 +5,124 @@
 <br>Stackblitz:  <a href="https://js-s8igd5.stackblitz.io">https://js-s8igd5.stackblitz.io</a></br>
 <br><a href="https://github.com/Thabby07/07MBIG-Seminario">Repositorio</a></br>
 
+<h3> Consideraciones previas </h3>
+<p>Antes de nada, me gustar&iacute;a comentar que este proyecto est&aacute; basado en un proyecto real a trav&eacute;s de la colaboraci&oacute;n de dos empresas que, por motivos laborales, debo anonimizar.&nbsp; Sin embargo, intentar&eacute; reflejar todos los aspectos importantes relativos a la asignatura.</p>
+
+<h3> Contexto del problema </h3>
+<p>En los meses de diciembre y enero del 2018-2019 el Ayuntamiento de Sevilla quiere impulsar el impacto tur&iacute;stico de la ciudad por lo que propone una serie de eventos navide&ntilde;os relacionados con la iluminaci&oacute;n por toda la ciudad. El fin que persigue es conocer el perfil sociodemogr&aacute;fico de los turistas que pasan las navidades en Sevilla.</p>
+<p>Para ello, comienza a colaborar con una empresa de telecomunicaciones, MobiCable, que accede con el fin de mostrar cierta publicidad en estos eventos.&nbsp;El equipo de Data Science de MobiCable comienza a realizar el tratamiento de los datos y as&iacute; ofrecer la mejor soluci&oacute;n al Ayuntamiento de Sevilla.</p>
+<p>Este equipo parte de los datos generados por los propios clientes de su empresa, MobiCable, es decir, CDRs (o Call Data Records) que no son m&aacute;s que conexiones de datos m&oacute;viles de los usuarios, llamadas, mensajes de texto, geoposicionamiento a trav&eacute;s de las antenas, etc. Adem&aacute;s de la cartera de clientes donde aparece su informaci&oacute;n sociodemogr&aacute;fica (edad, g&eacute;nero, procedencia, etc).</p>
+
+<p>Tras unas semanas de trabajo generan un dataset con toda la informaci&oacute;n necesaria para presentar una propuesta al Ayuntamiento. Esta es una muestra del dataset generado:</p>
+<table style="height: 118px; width: 711px; border-color: RED;"><caption>&nbsp;</caption>
+<tbody>
+<tr style="height: 27px;">
+<td style="width: 96px; text-align: center; height: 27px;">EDAD</td>
+<td style="width: 73px; text-align: center; height: 27px;">SEXO</td>
+<td style="width: 152px; text-align: center; height: 27px;">TIPO DE CLIENTE</td>
+<td style="width: 167px; text-align: center; height: 27px;">C&Oacute;DIGO POSTAL</td>
+<td style="width: 44px; text-align: center; height: 27px;">PROVINCIA</td>
+<td style="width: 203px; text-align: center; height: 27px;">N&Uacute;MERO DE PERSONAS</td>
+</tr>
+<tr style="height: 12px;">
+<td style="width: 96px; text-align: center; height: 12px;">25-40</td>
+<td style="width: 73px; text-align: center; height: 12px;">Hombre</td>
+<td style="width: 152px; text-align: center; height: 12px;">Pospago</td>
+<td style="width: 167px; text-align: center; height: 12px;">30005</td>
+<td style="width: 44px; text-align: center; height: 12px;">MURCIA</td>
+<td style="width: 203px; text-align: center; height: 12px;">3</td>
+</tr>
+<tr style="height: 9px;">
+<td style="width: 96px; text-align: center; height: 9px;">40-65</td>
+<td style="width: 73px; text-align: center; height: 9px;">Mujer</td>
+<td style="width: 152px; text-align: center; height: 9px;">Pospago</td>
+<td style="width: 167px; text-align: center; height: 9px;">39006</td>
+<td style="width: 44px; text-align: center; height: 9px;">CANTABRIA</td>
+<td style="width: 203px; text-align: center; height: 9px;">3</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 96px; text-align: center; height: 18px;">25-40</td>
+<td style="width: 73px; text-align: center; height: 18px;">Mujer</td>
+<td style="width: 152px; text-align: center; height: 18px;">Pospago</td>
+<td style="width: 167px; text-align: center; height: 18px;">30820</td>
+<td style="width: 44px; text-align: center; height: 18px;">MURCIA</td>
+<td style="width: 203px; text-align: center; height: 18px;">3</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 96px; text-align: center; height: 18px;">40.65</td>
+<td style="width: 73px; text-align: center; height: 18px;">Mujer</td>
+<td style="width: 152px; text-align: center; height: 18px;">Pospago</td>
+<td style="width: 167px; text-align: center; height: 18px;">30730</td>
+<td style="width: 44px; text-align: center; height: 18px;">MURCIA</td>
+<td style="width: 203px; text-align: center; height: 18px;">3</td>
+</tr>
+</tbody>
+</table>
 
 
-<h3> Contexto </h3>
-Contaremos un poco de historia + navidad + publicidad.
-Donde surge el problema
-de Donde hemos sacado los datos
-cual es el dataset final que samos para la visualicazión
-teoria de porque se han usado esos graficos
-referencias!!!!!
+<h3> Visualización de los resultados </h3>
+<p>Una vez generado el conjunto de datos, el equipo de Data Science se dispone a crear visualizaciones para poder entender el comportamiento de los turistas y que el Ayuntamiento tome decisiones en base a estas concluciones para los eventos del a&ntilde;o siguiente.</p>
+<p>Para ello, han usado diversas herramientas como <strong>Matplotlib</strong> y <strong>Seaborn</strong> de Python, <strong>Tableau</strong> para graficar un mapa y <strong>Google Sheets</strong>. Se han usado estos recursos porque el equipo de Data Science es d&oacute;nde tiene m&aacute;s experiencia de otros proyectos.</p>
+<p>A continuaci&oacute;n, podremos ver las conclusiones extra&iacute;das de los datos sobre la poblaci&oacute;n estudiada.</p>
 
-<h3> Herramientas utilizadas </h3>
+<h4> Análisis de la edad </h4>
+<div>
+<div>Para representar la distribuci&oacute;n de la edad de los turistas se ha usado un gr&aacute;fico de barras verticales donde el eje X indica cada una de las categor&iacute;as de la edad y el eje Y representa el n&uacute;mero de personas que caen en esa categor&iacute;a. Este gr&aacute;fico nos permite comparar f&aacute;cilmente cu&aacute;les son las dos categor&iacute;as m&aacute;s representadas que son entre <strong>25 y 40 a&ntilde;os</strong> y <strong>entre 40 y 65</strong> a&ntilde;os.</div>
+</div>
 
-<h3> A la pregunta... ¿a qué tipo de audiencia va dirigida nuestra publicidad? </h3>
-
-Responderemos en base al resultado de la visualizacion, decidiremos en base a esta. 
-
-<h3> Análisis de la edad </h3>
-En base a la informacion de los CDRs y la cartera de clientes podemos ver el número de personas bla bla bla
-La gran mayoría de personas están entre los 40 y los 65 años etc
 <br>
 <iframe width="600" height="384" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTqZwTD3bhpYdO68_-z_RysOaDStGBJprUxlj-MPdSO9Rz-TyHSM4eiKXLkEKQaenenCWOOyVEMWa7K/pubchart?oid=1400394050&amp;format=interactive"></iframe>
-</br>
 
+<div>En este an&aacute;lisis debemos tener en cuenta lo siguiente:</div>
+<ul>
+<li>No disponemos de datos m&oacute;viles de menores de edad, ya que en teor&iacute;a el titular de una l&iacute;nea m&oacute;vil debe ser mayor de 18 a&ntilde;os.&nbsp;</li>
+<li>Debido a la gran cantidad de datos a analizar y el poco tiempo para realizar el an&aacute;lisis, s&oacute;lo se analizaron los datos m&oacute;viles, aunque a d&iacute;a de hoy muchas personas mayores no suelen hacer uso de &eacute;stos, si no de llamas y mensajes. Por eso, el n&uacute;mero de turistas mayores de 65 a&ntilde;os llega a ser tan bajo.&nbsp;</li>
+<li>La categor&iacute;a "Sin identificar" engloba en su mayor&iacute;a clientes de los que falta informaci&oacute;n en la base de datos, aunque tambi&eacute;n se han incluido aqu&iacute; a los clientes extranjeros (normalmente de paso que disponen de una tarjeta prepago).</li>
+</ul>
 
-<br> <a href="
-https://colab.research.google.com/drive/10BEYFQ0Wx6KLVMGzjiBrrQptJ5rDkQWS"> Enlace a Google Colab </a>
-</br>
+<h4> Análisis del género </h4>
+<p>El segundo an&aacute;lisis que hace el equipo de Data Science es la composici&oacute;n por g&eacute;nero. En este caso, se ha elegido un gr&aacute;fico de anillos para representar la distribuci&oacute;n entre estas categor&iacute;as. Por la propia naturaleza del g&eacute;nero nos encontramos con pocas opciones: "Hombre", "Mujer" y, como hemos visto anteriormente, "Sin identificar".</p>
+<p>Para mejorar la interpretabilidad se ha incluido el porcentaje de cada categor&iacute;a, lo cual al tener el fondo blanco (por ser una gr&aacute;fica de donut) se hace m&aacute;s legible.&nbsp;</p>
+<p>En definitiva, vemos c&oacute;mo el porcentaje de hombres supera al de mujeres en un 8.3%.</p>
 
+<br>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/z6jWvRT/composicion-genero.png" alt="composicion-genero" border="0"></a>
 
+<h4> Análisis de afluencia de turistas y residentes </h4>
+<p>Por otro lado, uno de los temas que el Ayuntamiento de Sevilla quer&iacute;a averiguar era la cantidad de turistas que visitaban la ciudad y, para ello, primero se grafic&oacute; una primera visualizaci&oacute;n donde se mostraran las provincias con m&aacute;s turistas. Est&aacute; claro que la primera de todas deber&iacute;a ser Sevilla por cercan&iacute;a a los eventos. Con este an&aacute;lisis, se vi&oacute; que Sevilla ven&iacute;a seguido de Madrid, Huelva, C&aacute;diz y Badajoz.&nbsp;</p>
+
+<br>
 <a href="https://ibb.co/R7qWY24"><img src="https://i.ibb.co/Trs5Ycq/top5-provincias.png" alt="top5-provincias" border="0"></a>
 
-Referencias https://seaborn.pydata.org/examples/horizontal_barplot.html
+<p>En este caso, se representaron los <strong>datos ordenados</strong> con una gr&aacute;fica de barras horizontales para resaltar la proporci&oacute;n del n&uacute;mero de residentes de Sevilla respecto al resto de provincias.</p>
+
+<p>Los últimos dos gráficos se pueden visualizar también desde este enlace de<a href="
+https://colab.research.google.com/drive/10BEYFQ0Wx6KLVMGzjiBrrQptJ5rDkQWS"> Google Colab</a>. </p>
+
+<h4> Análisis de afluencia de turistas (fuera de Sevilla) </h4>
+<p>&iquest;Y qu&eacute; ha pasado con el resto de provincias? Para representarlas se utiliz&oacute; un gr&aacute;fico de mapa de s&iacute;mbolos proporcionales, en este caso, c&iacute;rculos, donde el grosor indica el n&uacute;mero de turistas residentes en la provincia donde se encuentra el s&iacute;mbolo.</p>
+<p>Esta es una manera r&aacute;pida y sencilla de visualizar la proporci&oacute;n de turistas por localizaci&oacute;n.</p>
+
+<br>
+<a href="https://ibb.co/xXP00Lv"><img src="https://i.ibb.co/ydG11PT/Mapa-afluencia-turistas.jpg" alt="Mapa-afluencia-turistas" border="0"></a>
+
+<blockquote>
+<p><strong>NOTA</strong>: Se ha excluido Sevilla porque al ser un porcentaje alt&iacute;simo de residentes no se aprecia el resto de turistas en el mapa.</p>
+</blockquote>
+
+<br>
+<a href="https://ibb.co/18vRJyK"><img src="https://i.ibb.co/86KP4v2/turistas-locales-vs-resto-andalucia.jpg" alt="turistas-locales-vs-resto-andalucia" border="0"></a>
+
+Referencias
+
+teoria de porque se han usado esos graficos
+referencias!!!!!
+Aplicar teoría, por qué estos gráficos y no otros.
+
+https://seaborn.pydata.org/examples/horizontal_barplot.html
+
+https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/alumbra-itinerarios-de-luz-y-cultura-en-sevilla-por-navidad
+
+https://html-online.com/editor/
+
+https://datavizproject.com/
