@@ -9,7 +9,7 @@
 <p>Antes de nada, me gustar&iacute;a comentar que este proyecto est&aacute; basado en un proyecto real a trav&eacute;s de la colaboraci&oacute;n de dos empresas que, por motivos laborales, debo anonimizar.&nbsp; Sin embargo, intentar&eacute; reflejar todos los aspectos importantes relativos a la asignatura.</p>
 
 <h3> Contexto del problema </h3>
-<p>En los meses de diciembre y enero del 2018-2019 el Ayuntamiento de Sevilla quiere impulsar el impacto tur&iacute;stico de la ciudad por lo que propone una serie de eventos navide&ntilde;os relacionados con la iluminaci&oacute;n por toda la ciudad. El fin que persigue es conocer el perfil sociodemogr&aacute;fico de los turistas que pasan las navidades en Sevilla.</p>
+<p>En los meses de diciembre y enero del 2018-2019 el Ayuntamiento de Sevilla quiere impulsar el impacto tur&iacute;stico de la ciudad por lo que propone una serie de eventos navide&ntilde;os relacionados con la iluminaci&oacute;n por toda la ciudad (Juntadeandalucia.es, 2019). El fin que persigue es conocer el perfil sociodemogr&aacute;fico de los turistas que pasan las navidades en Sevilla.</p>
 <p>Para ello, comienza a colaborar con una empresa de telecomunicaciones, MobiCable, que accede con el fin de mostrar cierta publicidad en estos eventos.&nbsp;El equipo de Data Science de MobiCable comienza a realizar el tratamiento de los datos y as&iacute; ofrecer la mejor soluci&oacute;n al Ayuntamiento de Sevilla.</p>
 <p>Este equipo parte de los datos generados por los propios clientes de su empresa, MobiCable, es decir, CDRs (o Call Data Records) que no son m&aacute;s que conexiones de datos m&oacute;viles de los usuarios, llamadas, mensajes de texto, geoposicionamiento a trav&eacute;s de las antenas, etc. Adem&aacute;s de la cartera de clientes donde aparece su informaci&oacute;n sociodemogr&aacute;fica (edad, g&eacute;nero, procedencia, etc).</p>
 
@@ -61,7 +61,7 @@
 
 
 <h3> Visualización de los resultados </h3>
-<p>Una vez generado el conjunto de datos, el equipo de Data Science se dispone a crear visualizaciones para poder entender el comportamiento de los turistas y que el Ayuntamiento tome decisiones en base a estas concluciones para los eventos del a&ntilde;o siguiente.</p>
+<p>Una vez generado el conjunto de datos, el equipo de Data Science se dispone a crear visualizaciones para poder entender el comportamiento de los turistas y que el Ayuntamiento tome decisiones en base a estas concluciones para los eventos del a&ntilde;o siguiente (Data Viz Project, 2019).</p>
 <p>Para ello, han usado diversas herramientas como <strong>Matplotlib</strong> y <strong>Seaborn</strong> de Python, <strong>Tableau</strong> para graficar un mapa y <strong>Google Sheets</strong>. Se han usado estos recursos porque el equipo de Data Science es d&oacute;nde tiene m&aacute;s experiencia de otros proyectos.</p>
 <p>A continuaci&oacute;n, podremos ver las conclusiones extra&iacute;das de los datos sobre la poblaci&oacute;n estudiada.</p>
 
@@ -82,14 +82,14 @@
 
 <h4> Análisis del género </h4>
 <p>El segundo an&aacute;lisis que hace el equipo de Data Science es la composici&oacute;n por g&eacute;nero. En este caso, se ha elegido un gr&aacute;fico de anillos para representar la distribuci&oacute;n entre estas categor&iacute;as. Por la propia naturaleza del g&eacute;nero nos encontramos con pocas opciones: "Hombre", "Mujer" y, como hemos visto anteriormente, "Sin identificar".</p>
-<p>Para mejorar la interpretabilidad se ha incluido el porcentaje de cada categor&iacute;a, lo cual al tener el fondo blanco (por ser una gr&aacute;fica de donut) se hace m&aacute;s legible.&nbsp;</p>
+<p>Para mejorar la interpretabilidad se ha incluido el porcentaje de cada categor&iacute;a, lo cual al tener el fondo blanco (por ser una gr&aacute;fica de donut) se hace m&aacute;s legible.(Matplotlib.org, 2019).</p>
 <p>En definitiva, vemos c&oacute;mo el porcentaje de hombres supera al de mujeres en un 8.3%.</p>
 
 <br>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/z6jWvRT/composicion-genero.png" alt="composicion-genero" border="0"></a>
 
 <h4> Análisis de afluencia de turistas y residentes </h4>
-<p>Por otro lado, uno de los temas que el Ayuntamiento de Sevilla quer&iacute;a averiguar era la cantidad de turistas que visitaban la ciudad y, para ello, primero se grafic&oacute; una primera visualizaci&oacute;n donde se mostraran las provincias con m&aacute;s turistas. Est&aacute; claro que la primera de todas deber&iacute;a ser Sevilla por cercan&iacute;a a los eventos. Con este an&aacute;lisis, se vi&oacute; que Sevilla ven&iacute;a seguido de Madrid, Huelva, C&aacute;diz y Badajoz.&nbsp;</p>
+<p>Por otro lado, uno de los temas que el Ayuntamiento de Sevilla quer&iacute;a averiguar era la cantidad de turistas que visitaban la ciudad y, para ello, primero se grafic&oacute; una primera visualizaci&oacute;n donde se mostraran las provincias con m&aacute;s turistas (Seaborn.pydata.org, 2019). Est&aacute; claro que la primera de todas deber&iacute;a ser Sevilla por cercan&iacute;a a los eventos. Con este an&aacute;lisis, se vi&oacute; que Sevilla ven&iacute;a seguido de Madrid, Huelva, C&aacute;diz y Badajoz.&nbsp;</p>
 
 <br>
 <a href="https://ibb.co/R7qWY24"><img src="https://i.ibb.co/Trs5Ycq/top5-provincias.png" alt="top5-provincias" border="0"></a>
@@ -100,7 +100,7 @@
 https://colab.research.google.com/drive/10BEYFQ0Wx6KLVMGzjiBrrQptJ5rDkQWS"> Google Colab</a>. </p>
 
 <h4> Análisis de afluencia de turistas (fuera de Sevilla) </h4>
-<p>&iquest;Y qu&eacute; ha pasado con el resto de provincias? Para representarlas se utiliz&oacute; un gr&aacute;fico de mapa de s&iacute;mbolos proporcionales, en este caso, c&iacute;rculos, donde el grosor indica el n&uacute;mero de turistas residentes en la provincia donde se encuentra el s&iacute;mbolo.</p>
+<p>&iquest;Y qu&eacute; ha pasado con el resto de provincias? Para representarlas se utiliz&oacute; un gr&aacute;fico de mapa de s&iacute;mbolos proporcionales, en este caso, c&iacute;rculos, donde el grosor indica el n&uacute;mero de turistas residentes en la provincia donde se encuentra el s&iacute;mbolo (Help.tableau.com, 2019).</p>
 <p>Esta es una manera r&aacute;pida y sencilla de visualizar la proporci&oacute;n de turistas por localizaci&oacute;n.</p>
 
 <br>
@@ -110,19 +110,21 @@ https://colab.research.google.com/drive/10BEYFQ0Wx6KLVMGzjiBrrQptJ5rDkQWS"> Goog
 <p><strong>NOTA</strong>: Se ha excluido Sevilla porque al ser un porcentaje alt&iacute;simo de residentes no se aprecia el resto de turistas en el mapa.</p>
 </blockquote>
 
+<h4> Comparación de turistas entre Sevilla y resto de provincias andaluzas </h4>
+<p>Por &uacute;ltimo, se quer&iacute;a resaltar el n&uacute;mero de residentes de Sevilla con el resto de provincias andaluzas. Para ello, se utiliz&oacute; un mapa de &aacute;rbol donde se pueden ver tanto las proporciones (por el tama&ntilde;o del rect&aacute;ngulo), como las provincias (diferenciadas con una etiqueta y un color), as&iacute;&nbsp; como tambi&eacute;n el n&uacute;mero de turistas de cada lugar.</p>
+
 <br>
 <a href="https://ibb.co/18vRJyK"><img src="https://i.ibb.co/86KP4v2/turistas-locales-vs-resto-andalucia.jpg" alt="turistas-locales-vs-resto-andalucia" border="0"></a>
 
-Referencias
+<h3> Referencias </h3>
+<div>
+<ul>
+<li>Juntadeandalucia.es.&nbsp;(2019).&nbsp;Alumbra&nbsp;2018,&nbsp;Navidad&nbsp;en&nbsp;Sevilla.&nbsp;[online]&nbsp;Available&nbsp;at:&nbsp;https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/alumbra-itinerarios-de-luz-y-cultura-en-sevilla-por-navidad&nbsp;[Accessed&nbsp;1&nbsp;Dec.&nbsp;2019].</li>
+<li>Data&nbsp;Viz&nbsp;Project.&nbsp;(2019).&nbsp;Data&nbsp;Viz&nbsp;Project&nbsp;|&nbsp;Collection&nbsp;of&nbsp;data&nbsp;visualizations&nbsp;to&nbsp;get&nbsp;inspired&nbsp;and&nbsp;finding&nbsp;the&nbsp;right&nbsp;type..&nbsp;[online]&nbsp;Available&nbsp;at:&nbsp;https://datavizproject.com/&nbsp;[Accessed&nbsp;1&nbsp;Dec.&nbsp;2019].</li>
+<li>Seaborn.pydata.org.&nbsp;(2019).&nbsp;Horizontal&nbsp;bar&nbsp;plots&nbsp;&mdash;&nbsp;seaborn&nbsp;0.9.0&nbsp;documentation.&nbsp;[online]&nbsp;Available&nbsp;at:&nbsp;https://seaborn.pydata.org/examples/horizontal_barplot.html&nbsp;[Accessed&nbsp;1&nbsp;Dec.&nbsp;2019].</li>
+<li>Matplotlib.org.&nbsp;(2019).&nbsp;Labeling&nbsp;a&nbsp;pie&nbsp;and&nbsp;a&nbsp;donut&nbsp;&mdash;&nbsp;Matplotlib&nbsp;3.1.1&nbsp;documentation.&nbsp;[online]&nbsp;Available&nbsp;at:&nbsp;https://matplotlib.org/3.1.1/gallery/pie_and_polar_charts/pie_and_donut_labels.html&nbsp;[Accessed&nbsp;1&nbsp;Dec.&nbsp;2019].</li>
+<li>Help.tableau.com.&nbsp;(2019).&nbsp;Create&nbsp;Maps&nbsp;that&nbsp;Show&nbsp;Quantitative&nbsp;Values&nbsp;in&nbsp;Tableau&nbsp;-&nbsp;Tableau.&nbsp;[online]&nbsp;Available&nbsp;at:&nbsp;https://help.tableau.com/current/pro/desktop/en-us/maps_howto_symbol.html&nbsp;[Accessed&nbsp;1&nbsp;Dec.&nbsp;2019].</li>
+<li>Html-online.com.&nbsp;(2019).&nbsp;Online&nbsp;HTML&nbsp;Editor.&nbsp;[online]&nbsp;Available&nbsp;at:&nbsp;https://html-online.com/editor/&nbsp;[Accessed&nbsp;1&nbsp;Dec.&nbsp;2019].</li>
+</ul>
+</div>
 
-teoria de porque se han usado esos graficos
-referencias!!!!!
-Aplicar teoría, por qué estos gráficos y no otros.
-
-https://seaborn.pydata.org/examples/horizontal_barplot.html
-
-https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/alumbra-itinerarios-de-luz-y-cultura-en-sevilla-por-navidad
-
-https://html-online.com/editor/
-
-https://datavizproject.com/
