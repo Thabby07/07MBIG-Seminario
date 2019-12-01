@@ -5,10 +5,31 @@
 <br>Stackblitz:  <a href="https://js-s8igd5.stackblitz.io">https://js-s8igd5.stackblitz.io</a></br>
 <br><a href="https://github.com/Thabby07/07MBIG-Seminario">Repositorio</a></br>
 
-<h3> Consideraciones previas </h3>
-<p>Antes de nada, me gustar&iacute;a comentar que este proyecto est&aacute; basado en un proyecto real a trav&eacute;s de la colaboraci&oacute;n de dos empresas que, por motivos laborales, debo anonimizar.&nbsp; Sin embargo, intentar&eacute; reflejar todos los aspectos importantes relativos a la asignatura.</p>
+<h1>Índice</h1>
+<div class="box">
+<ul class="lista">
+	<li> <a href="#ind1"> 1. Consideraciones previas </a></li>
+  <li> <a href="#ind2"> 2. Contexto del problema </a></li>
+  <li> <a href="#ind3"> 3. Presentación de los resultados </a></li>
+  <ul>
+    <li> <a href="#ind31"> 3.1. Análisis de la edad </a></li>
+    <li> <a href="#ind32"> 3.2. Análisis del género </a></li>
+    <li> <a href="#ind33"> 3.3. Análisis de afluencia de turistas y residentes </a></li>
+    <li> <a href="#ind34"> 3.4. Análisis de afluencia de turistas (fuera de Sevilla) </a></li>
+    <li> <a href="#ind35"> 3.5. Comparación de turistas entre Sevilla y resto de provincias andaluzas </a></li>
+    
+  </ul>
+  <li> <a href="#ind4"> 4. Referencias </a></li>
+</ul>
+</div>
 
-<h3> Contexto del problema </h3>
+<a name="ind1" id="ind1"> </a>
+<h3> 1. Consideraciones previas </h3>
+<p>Antes de nada, me gustar&iacute;a comentar que este proyecto est&aacute; basado en un proyecto real a trav&eacute;s de la colaboraci&oacute;n de dos empresas que, por motivos laborales, debo anonimizar.&nbsp; Sin embargo, intentar&eacute; reflejar todos los aspectos importantes relativos a la asignatura.</p>
+<p>Aunque se trate de un proyecto real está adaptado a los requisitos de la asignatura, es decir, todo este contenido es de elaboración propia.</p>
+
+<a name="ind2" id="ind2"> </a>
+<h3> 2. Contexto del problema </h3>
 <p>En los meses de diciembre y enero del 2018-2019 el Ayuntamiento de Sevilla quiere impulsar el impacto tur&iacute;stico de la ciudad por lo que propone una serie de eventos navide&ntilde;os relacionados con la iluminaci&oacute;n por toda la ciudad (Juntadeandalucia.es, 2019). El fin que persigue es conocer el perfil sociodemogr&aacute;fico de los turistas que pasan las navidades en Sevilla.</p>
 <p>Para ello, comienza a colaborar con una empresa de telecomunicaciones, MobiCable, que accede con el fin de mostrar cierta publicidad en estos eventos.&nbsp;El equipo de Data Science de MobiCable comienza a realizar el tratamiento de los datos y as&iacute; ofrecer la mejor soluci&oacute;n al Ayuntamiento de Sevilla.</p>
 <p>Este equipo parte de los datos generados por los propios clientes de su empresa, MobiCable, es decir, CDRs (o Call Data Records) que no son m&aacute;s que conexiones de datos m&oacute;viles de los usuarios, llamadas, mensajes de texto, geoposicionamiento a trav&eacute;s de las antenas, etc. Adem&aacute;s de la cartera de clientes donde aparece su informaci&oacute;n sociodemogr&aacute;fica (edad, g&eacute;nero, procedencia, etc).</p>
@@ -59,13 +80,14 @@
 </tbody>
 </table>
 
-
-<h3> Visualización de los resultados </h3>
+<a name="ind3" id="ind3"> </a>
+<h3> 3. Presentación de los resultados </h3>
 <p>Una vez generado el conjunto de datos, el equipo de Data Science se dispone a crear visualizaciones para poder entender el comportamiento de los turistas y que el Ayuntamiento tome decisiones en base a estas concluciones para los eventos del a&ntilde;o siguiente (Data Viz Project, 2019).</p>
 <p>Para ello, han usado diversas herramientas como <strong>Matplotlib</strong> y <strong>Seaborn</strong> de Python, <strong>Tableau</strong> para graficar un mapa y <strong>Google Sheets</strong>. Se han usado estos recursos porque el equipo de Data Science es d&oacute;nde tiene m&aacute;s experiencia de otros proyectos.</p>
 <p>A continuaci&oacute;n, podremos ver las conclusiones extra&iacute;das de los datos sobre la poblaci&oacute;n estudiada.</p>
 
-<h4> Análisis de la edad </h4>
+<a name="ind31" id="ind31"> </a>
+<h4> 3.1. Análisis de la edad </h4>
 <div>
 <div>Para representar la distribuci&oacute;n de la edad de los turistas se ha usado un gr&aacute;fico de barras verticales donde el eje X indica cada una de las categor&iacute;as de la edad y el eje Y representa el n&uacute;mero de personas que caen en esa categor&iacute;a. Este gr&aacute;fico nos permite comparar f&aacute;cilmente cu&aacute;les son las dos categor&iacute;as m&aacute;s representadas que son entre <strong>25 y 40 a&ntilde;os</strong> y <strong>entre 40 y 65</strong> a&ntilde;os.</div>
 </div>
@@ -80,7 +102,8 @@
 <li>La categor&iacute;a "Sin identificar" engloba en su mayor&iacute;a clientes de los que falta informaci&oacute;n en la base de datos, aunque tambi&eacute;n se han incluido aqu&iacute; a los clientes extranjeros (normalmente de paso que disponen de una tarjeta prepago).</li>
 </ul>
 
-<h4> Análisis del género </h4>
+<a name="ind32" id="ind32"> </a>
+<h4> 3.2. Análisis del género </h4>
 <p>El segundo an&aacute;lisis que hace el equipo de Data Science es la composici&oacute;n por g&eacute;nero. En este caso, se ha elegido un gr&aacute;fico de anillos para representar la distribuci&oacute;n entre estas categor&iacute;as. Por la propia naturaleza del g&eacute;nero nos encontramos con pocas opciones: "Hombre", "Mujer" y, como hemos visto anteriormente, "Sin identificar".</p>
 <p>Para mejorar la interpretabilidad se ha incluido el porcentaje de cada categor&iacute;a, lo cual al tener el fondo blanco (por ser una gr&aacute;fica de donut) se hace m&aacute;s legible.(Matplotlib.org, 2019).</p>
 <p>En definitiva, vemos c&oacute;mo el porcentaje de hombres supera al de mujeres en un 8.3%.</p>
@@ -88,7 +111,8 @@
 <br>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/z6jWvRT/composicion-genero.png" alt="composicion-genero" border="0"></a>
 
-<h4> Análisis de afluencia de turistas y residentes </h4>
+<a name="ind33" id="ind33"> </a>
+<h4> 3.3. Análisis de afluencia de turistas y residentes </h4>
 <p>Por otro lado, uno de los temas que el Ayuntamiento de Sevilla quer&iacute;a averiguar era la cantidad de turistas que visitaban la ciudad y, para ello, primero se grafic&oacute; una primera visualizaci&oacute;n donde se mostraran las provincias con m&aacute;s turistas (Seaborn.pydata.org, 2019). Est&aacute; claro que la primera de todas deber&iacute;a ser Sevilla por cercan&iacute;a a los eventos. Con este an&aacute;lisis, se vi&oacute; que Sevilla ven&iacute;a seguido de Madrid, Huelva, C&aacute;diz y Badajoz.&nbsp;</p>
 
 <br>
@@ -99,7 +123,8 @@
 <p>Los últimos dos gráficos se pueden visualizar también desde este enlace de<a href="
 https://colab.research.google.com/drive/10BEYFQ0Wx6KLVMGzjiBrrQptJ5rDkQWS"> Google Colab</a>. </p>
 
-<h4> Análisis de afluencia de turistas (fuera de Sevilla) </h4>
+<a name="ind34" id="ind34"> </a>
+<h4> 3.4. Análisis de afluencia de turistas (fuera de Sevilla) </h4>
 <p>&iquest;Y qu&eacute; ha pasado con el resto de provincias? Para representarlas se utiliz&oacute; un gr&aacute;fico de mapa de s&iacute;mbolos proporcionales, en este caso, c&iacute;rculos, donde el grosor indica el n&uacute;mero de turistas residentes en la provincia donde se encuentra el s&iacute;mbolo (Help.tableau.com, 2019).</p>
 <p>Esta es una manera r&aacute;pida y sencilla de visualizar la proporci&oacute;n de turistas por localizaci&oacute;n.</p>
 
@@ -110,13 +135,15 @@ https://colab.research.google.com/drive/10BEYFQ0Wx6KLVMGzjiBrrQptJ5rDkQWS"> Goog
 <p><strong>NOTA</strong>: Se ha excluido Sevilla porque al ser un porcentaje alt&iacute;simo de residentes no se aprecia el resto de turistas en el mapa.</p>
 </blockquote>
 
-<h4> Comparación de turistas entre Sevilla y resto de provincias andaluzas </h4>
+<a name="ind35" id="ind35"> </a>
+<h4> 3.5. Comparación de turistas entre Sevilla y resto de provincias andaluzas </h4>
 <p>Por &uacute;ltimo, se quer&iacute;a resaltar el n&uacute;mero de residentes de Sevilla con el resto de provincias andaluzas. Para ello, se utiliz&oacute; un mapa de &aacute;rbol donde se pueden ver tanto las proporciones (por el tama&ntilde;o del rect&aacute;ngulo), como las provincias (diferenciadas con una etiqueta y un color), as&iacute;&nbsp; como tambi&eacute;n el n&uacute;mero de turistas de cada lugar.</p>
 
 <br>
 <a href="https://ibb.co/18vRJyK"><img src="https://i.ibb.co/86KP4v2/turistas-locales-vs-resto-andalucia.jpg" alt="turistas-locales-vs-resto-andalucia" border="0"></a>
 
-<h3> Referencias </h3>
+<a name="ind4" id="ind4"> </a>
+<h3> 4. Referencias </h3>
 <div>
 <ul>
 <li>Juntadeandalucia.es.&nbsp;(2019).&nbsp;Alumbra&nbsp;2018,&nbsp;Navidad&nbsp;en&nbsp;Sevilla.&nbsp;[online]&nbsp;Available&nbsp;at:&nbsp;https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/evento/alumbra-itinerarios-de-luz-y-cultura-en-sevilla-por-navidad&nbsp;[Accessed&nbsp;1&nbsp;Dec.&nbsp;2019].</li>
